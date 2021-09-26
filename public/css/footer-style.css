@@ -1,0 +1,111 @@
+.MoreAboutBrands h3 {font-size: 22px;}
+.MoreAboutBrands h2 {font-size: 22px;}
+.MoreAboutBrands p {font-size:12px;}
+.VerticalLinksCat {display: inline-block;}
+.footerVerticalLinks {display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; padding:10px 0 10px; margin:0; list-style:none; position: relative; font-size: 12px;}
+.footerVerticalLinks:after {background: #666; width:30px; height:4px; position: absolute; content:''; left:0; bottom:-10px}
+.footerVerticalLinks-item {font-weight: 500}
+.footerVerticalLinks-item a {color: #999; font-weight: 400}
+.footerVerticalLinks-item::after { display: inline-block; padding-right: .5rem; padding-left: .5rem; color: #6c757d; content: "|"; }
+.footerVerticalLinks-item:nth-child(1)::after {content: ":";padding-left: .2rem; }
+.footerVerticalLinks-item:last-child::after {display: none;}
+
+footer.footer-arya { background:#f6f6f6; padding-top:15px;padding-bottom:15px;}
+footer.footer-arya h4 { color:#999; text-transform:capitalize;font-family: 'Lato', sans-serif; font-weight:700; font-size: 16px; border-bottom:1px solid #999; padding: 0 0 10px; margin:30px 0 15px; color: #606060}
+footer.footer-arya ul {margin:0; padding:0; list-style:none;}
+footer.footer-arya ul li a { color:#999; line-height:1.9;font-family: 'Lato', sans-serif; font-weight:400; font-size: 14px;}
+.footerVerticalLinks-item a:hover,
+footer.footer-arya ul li a:hover { color:#333; text-decoration: none;}
+.footer-social .fab {font-size:26px}
+.footerLast {border-top: 2px solid #c5c5c5; padding-top: 15px; font-size: 12px; color:#626262; margin-top: 25px;}
+.footerLast a {color:#626262}
+.footerLast a:hover { color:#333; text-decoration: none;}
+
+
+.br-t-1 { border-top: 1px solid #ccc; }
+.br-b-1 { border-bottom: 1px solid #ccc; }
+.fs-12 { font-size: 12px; }
+.fs-16 { font-size: 16px; }
+.br-color-light {border-color:#eaeaea} 
+.bg-fbfbfb {background: #fbfbfb;}
+
+.DownloadSMSform .form-control {background: transparent; border: 0;    border-radius: 0; border-bottom:1px solid #ccc; padding-left: 2px;padding-right: 70px;}
+.DownloadSMSform .btn { padding: .2rem .75rem; font-size: 1rem; border-color: #ccc ; border-radius: 0;}
+.footer-arya .bg-fbfbfb {color: #606060}
+.footer-arya .bg-fbfbfb h5 {margin-bottom: 2px !important; font-weight: 700;}
+.footer-arya .bg-fbfbfb label,
+.footer-arya .bg-fbfbfb a {color: #606060; font-size: 14px;}
+.DownloadAppNew,
+.customNewCheck {position: relative;}
+.DownloadAppNew:after,
+.customNewCheck:after {background:#666; width:20px; height: 4px; position: absolute; content: ''; left: 0; bottom:1px;}
+.customNewCheck li {position: relative; }
+.customNewCheck .list-inline-item:not(:last-child) {margin-right: 20px}
+.customNewCheck li input { position: absolute; width: 0; height: 0; opacity: 0;}
+.customNewCheck li label {cursor: pointer;}
+.customNewCheck li input:checked + label {color: #417505; font-weight: 700}
+.DownloadSMSform .formFild { position: relative; }
+.DownloadSMSform .btn { padding: .2rem .75rem; font-size: 1rem; border-color: #ccc; position: absolute; right: 0; top:1px;}
+.br-0 { border: 0 !important; }
+footer.footer-arya ul.payment-logos {display: inline-block; border: 0; margin: 0; padding: }
+footer.footer-arya ul.payment-logos li { font-size: 0; float: left; text-indent: -9999px; margin:10px 0 0 10px; background-image: url(../images/spritesheet.png); background-position: 0 -60px; width: 67px; height: 40px; }
+footer.footer-arya ul.payment-logos .visa { background-position: -67px -100px; }
+footer.footer-arya ul ul.payment-logos .mastercard { background-position: -267px -200px; }
+footer.footer-arya ul.payment-logos .diners-club { background-position: 0 -140px;}
+footer.footer-arya ul.payment-logos .american-express { background-position: -267px -120px; }
+footer.footer-arya ul.payment-logos .rupay { background-position: -200px -120px;}
+footer.footer-arya ul.payment-logos .NetBanking { background-position: 0 -180px;}
+footer.footer-arya ul.payment-logos .EMIOptions { background-position: -67px -60px;}
+
+@media (min-width: 768px) {
+.hideOnDesktop{display:none !important}
+.br-zero {border: 0 !important}
+}
+
+@media (max-width:767px) {
+.DownloadAppNew,
+.customNewCheck { position: relative; }
+footer.row {text-align: left;}
+.collepsMobileSix ul,
+.collepsMobileOne ul,
+.collepsMobileTwo ul,
+.collepsMobileThree ul,
+.collepsMobileFour ul,
+.collepsMobileFive ul {display: none}
+footer.footer-arya .collepsMobileSix h4,
+footer.footer-arya .collepsMobileOne h4,
+footer.footer-arya .collepsMobileTwo h4,
+footer.footer-arya .collepsMobileThree h4,
+footer.footer-arya .collepsMobileFour h4,
+footer.footer-arya .collepsMobileFive h4 {margin: 0; padding: 10px; font-size: 14px ; cursor: pointer; position: relative;}
+footer.footer-arya .collepsMobileSix h4:after,
+footer.footer-arya .collepsMobileOne h4:after,
+footer.footer-arya .collepsMobileTwo h4:after,
+footer.footer-arya .collepsMobileThree h4:after,
+footer.footer-arya .collepsMobileFour h4:after,
+footer.footer-arya .collepsMobileFive h4:after {content: '+'; position: absolute; top:5px; right: 10px; font-size: 20px; font-weight: 100;}
+footer.footer-arya .collepsMobileSix.open h4:after,
+footer.footer-arya .collepsMobileOne.open h4:after,
+footer.footer-arya .collepsMobileTwo.open h4:after,
+footer.footer-arya .collepsMobileThree.open h4:after,
+footer.footer-arya .collepsMobileFour.open h4:after,
+footer.footer-arya .collepsMobileFive.open h4:after {content: '-'; font-size: 24px;top: 2px;}
+footer.footer-arya .collepsMobileSix.open h4,
+footer.footer-arya .collepsMobileOne.open h4,
+footer.footer-arya .collepsMobileTwo.open h4,
+footer.footer-arya .collepsMobileThree.open h4,
+footer.footer-arya .collepsMobileFour.open h4,
+footer.footer-arya .collepsMobileFive.open h4 {border-color: #ccc;}
+footer.footer-arya ul {padding:0 15px 10px; border-bottom: 1px solid #999; overflow: hidden}
+footer.footer-arya .collepsMobileSix ul,
+footer.footer-arya .collepsMobileFive ul {padding-top: 10px}
+footer.footer-arya .collepsMobileFive ul li  { max-width: 40%; display: inline-block;    width: auto; margin-top: 5px !important;}
+footer.footer-arya ul li a { font-size: 12px; line-height: 1}
+footer.footer-arya {padding-top: 0}
+.backToTop {margin: 0 -15px 15px; text-align: center; display: block; background: #888888; color: #fff; text-decoration: none; text-transform: uppercase; font-weight:400; padding-top: 10px; padding-bottom: 10px;font-size: 14px;}
+.backToTop:hover {background: #333; color: #fff; text-decoration: none;}
+
+.footer-arya .col { flex-basis: inherit; -webkit-box-flex: inherit; -ms-flex-positive: inherit; flex-grow: inherit; }
+.footerLast { margin-top: -1px; font-size: 11px; }
+}
+
