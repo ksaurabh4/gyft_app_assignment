@@ -8,11 +8,11 @@ import Home from './containers/Home/Home';
 function App() {
   return (
     <BrowserRouter>
-      <Link to="/" className="cartBtn"><span>1</span><img src="images/cart.png" alt='cart' /></Link>
+      <Link to="/" className="cartBtn"><span>1</span><img src="/images/cart.png" alt='cart' /></Link>
       <div className='App'>
         {/* <LeftNavBar /> */}
         <Route path="/" exact component={Home} />
-        <Route path="/instantvouchers/:brand" component={Brand} />
+        <Route path="/instantvouchers/:brand" exact component={Brand} />
       </div>
     </BrowserRouter>
   );

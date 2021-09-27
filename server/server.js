@@ -24,6 +24,7 @@ const serverRenderer = (req, res, next) => {
             )
         )
     })
+
 }
 router.use('^/$', serverRenderer)
 

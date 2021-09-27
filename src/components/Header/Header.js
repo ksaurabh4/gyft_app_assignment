@@ -13,13 +13,13 @@ export default function Header() {
                                     <a className="dropdown-toggle" href="NoPage" id="ProfileMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hi Amitabh Kumar!</a>
                                     <div className="dropdown-menu dropdown-menu-right shadow rounded-0 fs-14 border-0 mt-1" aria-labelledby="ProfileMenu">
                                         <a className="d-block p-2 lh-1" href="NoPage">
-                                            <span className="pr-2"><img src="images/profile-icon.png" /></span> My Profile
+                                            <span className="pr-2"><img src="/images/profile-icon.png" /></span> My Profile
                                         </a>
                                         <a className="d-block p-2 lh-1" href="NoPage">
-                                            <span className="pr-2"><img src="images/tr-icon.png" /></span> My Transaction
+                                            <span className="pr-2"><img src="/images/tr-icon.png" /></span> My Transaction
                                         </a>
                                         <a className="d-block p-2 lh-1" href="NoPage">
-                                            <span className="pr-2"><img src="images/logout-icon.png" /></span> Logout
+                                            <span className="pr-2"><img src="/images/logout-icon.png" /></span> Logout
                                         </a>
                                     </div>
                                 </li>
@@ -42,7 +42,7 @@ export default function Header() {
                                     </div>
                                 </li>
                                 <li className="list-inline-item call nowrap">
-                                    <span><a href="tel:18001033314"><img src="images/call.png" alt="logo" /></a></span>
+                                    <span><a href="tel:18001033314"><img src="/images/call.png" alt="logo" /></a></span>
                                     <span className="pl-l fw-700 d-none d-md-inline-block">1800-103-3314</span>
                                 </li>
                             </ul>
@@ -53,7 +53,7 @@ export default function Header() {
                             </div>
                         </div>
                         <div className="col-7 col-md-4 text-right center-logo">
-                            <Link to="/"><img src="images/logo.png" className="img-fluid" /></Link>
+                            <Link to="/"><img src="/images/logo.png" className="img-fluid" /></Link>
                         </div>
                     </div>
                 </div>

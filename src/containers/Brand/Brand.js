@@ -1,12 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { useParams } from 'react-router-dom'
 import Footer from '../../components/Footer/Footer'
 import Header from '../../components/Header/Header'
 import NavBar from '../../components/NavBar/NavBar'
+import { fetchBrandDetails } from '../../redux/actions'
 import OrderSummary from '../OrderSummary/OrderSummary'
 import TrandingBrands from '../TrandingBrands/TrandingBrands'
-
+import * as TYPE from "../../redux/constants/categoryConstants";
 
 export default function Brand() {
+    const { brand } = useParams()
+    console.log('brand', brand)
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(fetchBrandDetails(brand))
+        return () => {
+            dispatch({ type: TYPE.RESET_BRAND })
+        }
+    }, [brand, dispatch])
+
+    const brandInfo = useSelector(state => state.brandInfo)
+    const { card, brandDetails, products } = brandInfo
+
 
     return (
         <div>
@@ -48,8 +64,8 @@ export default function Brand() {
                     <NavBar />
                     <section className="row">
                         <div className="col-12 px-0">
-                            <img src="images/brand-banner.jpg" className="w-100 d-none d-md-block" />
-                            <img src="images/brand-mobile-banner.jpg" className="w-100 d-block d-md-none" />
+                            <img src={brandDetails && brandDetails.image_url} className="w-100 d-none d-md-block" />
+                            <img src={brandDetails && brandDetails.image_url_mobile} className="w-100 d-block d-md-none" />
                         </div>
                     </section>
                     <section className="row brandPage pb-3 pb-md-4">
@@ -72,7 +88,7 @@ export default function Brand() {
                                             </nav>
                                             <div>
                                                 <div className="pb-3">
-                                                    <img src="images/more.png" />
+                                                    <img src={brandDetails && brandDetails.brand_icon_url} />
                                                 </div>
                                                 <h2 className="h6">Buy/Redeem MORE Gift Vouchers &amp; Gift Card</h2>
                                                 <p className="fs-14 m-0">Owned by More Retail Limited, More stores are hypermarkets for every home need. Customers find groceries, home essentials, cosmetics, fashion essentials, etc under one roof. Choose More Gift Cards and Gift Vouchers for cashless shopping.</p>

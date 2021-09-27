@@ -13,7 +13,7 @@ import { Provider } from 'react-redux';
 //   document.getElementById('root')
 // );
 
-ReactDOM.hydrate(
+ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
       <App />
