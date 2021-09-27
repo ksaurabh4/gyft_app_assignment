@@ -7,6 +7,7 @@ import TrandingBrands from '../TrandingBrands/TrandingBrands'
 
 
 export default function Brand() {
+
     return (
         <div>
             <div className="off-canvas-nav">
