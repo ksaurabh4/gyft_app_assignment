@@ -7,12 +7,12 @@ import BestSellingBrands from '../BestSellingBrands/BestSellingBrands'
 import Deals from '../Deals/Deals'
 import TrandingBrands from '../TrandingBrands/TrandingBrands'
 import TrandingCategory from '../TrandingCategory/TrandingCategory'
+import DiscountOffersRecent from '../DiscountOffersRecent/DiscountOffersRecent'
 
 
 export default function Home() {
     return (
         <div>
-            <a href="NoPage" className="cartBtn"><span>1</span><img src="images/cart.png" /></a>
             <div className="off-canvas-nav">
                 <div className="left-nav-toplink">
                     <div className="left-nav">
@@ -47,12 +47,7 @@ export default function Home() {
             <div className="off-canvas-main">
                 <div className="container-fluid">
                     <Header />
-                    <nav className="desktopNav row border-bottom bg-white">
-
-
-                        <div className="container"><NavBar /></div>
-
-                    </nav>
+                    <NavBar />
                     <section className="row">
                         <div className="col-12 p-0">
                             <Carousel />
@@ -73,53 +68,13 @@ export default function Home() {
                         </div>
                     </section>
                     <section className="row DiscountsOffersRecent">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-12 col-md-4 py-3 py-md-4">
-                                    <h3 className="fs-16 fw-400 border-bottom pb-2 text-uppercase">Best Discounts</h3>
-                                    <div className="Discounts-owl-carousel owl-carousel">
-                                        <div className="item"><div className="border"><img src="images/logos/1.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/2.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/3.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/4.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/5.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/6.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/7.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/8.png" /></div></div>
-                                    </div>
-                                </div>
-                                <div className="col-12 col-md-4 py-3 py-md-4">
-                                    <h3 className="fs-16 fw-400 border-bottom pb-2 text-uppercase">Best Offers</h3>
-                                    <div className="Offers-owl-carousel owl-carousel">
-                                        <div className="item"><div className="border"><img src="images/logos/9.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/10.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/1.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/2.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/3.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/4.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/5.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/6.png" /></div></div>
-                                    </div>
-                                </div>
-                                <div className="col-12 col-md-4 py-3 py-md-4">
-                                    <h3 className="fs-16 fw-400 border-bottom pb-2 text-uppercase">YOUR FAVOURITE</h3>
-                                    <div className="Recent-owl-carousel owl-carousel">
-                                        <div className="item"><div className="border"><img src="images/logos/7.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/8.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/9.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/10.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/1.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/2.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/3.png" /></div></div>
-                                        <div className="item"><div className="border"><img src="images/logos/4.png" /></div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <DiscountOffersRecent />
                     </section>
                     <section className="row TrendingBrands py-3 py-md-4">
-                        <TrandingBrands /></section>
-                    <Footer /></div>
+                        <TrandingBrands />
+                    </section>
+                    <Footer />
+                </div>
             </div>
             {/* login */}
             <div className="modal customModal" tabIndex={-1} role="dialog" id="login" aria-labelledby="myLargeModalLabel" aria-hidden="true">

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
 export default function Header() {
     return (
         <header className="row border-bottom">
@@ -53,12 +53,13 @@ export default function Header() {
                             </div>
                         </div>
                         <div className="col-7 col-md-4 text-right center-logo">
-                            <a href="index.html"><img src="images/logo.png" className="img-fluid" /></a>
+                            <Link to="/"><img src="images/logo.png" className="img-fluid" /></Link>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+
 
     )
 }

@@ -9,57 +9,38 @@ import TrandingBrands from '../TrandingBrands/TrandingBrands'
 export default function Brand() {
     return (
         <div>
-            <a href="NoPage" className="cartBtn"><span>1</span><img src="images/cart.png" /></a>
             <div className="off-canvas-nav">
                 <div className="left-nav-toplink">
                     <div className="left-nav">
                         <ul className="list-unstyled m-0">
-                            <li><a href="index.html">Home</a>
-                            </li>
-                            <li><a href="NoPage">New Arrivals</a>
-                            </li>
-                            <li className="show-mobile parent"><a href="NoPage" data-related="title_1">Categories</a>
-                            </li>
-                            <li><a href="NoPage">Discounts</a>
-                            </li>
-                            <li><a href="NoPage">Bogo</a>
-                            </li>
-                            <li><a href="NoPage">Check My Voucher Status</a>
-                            </li>
-                            <li><a href="NoPage">Resend My Voucher</a>
-                            </li>
-                            <li><a href="NoPage">My Transactions</a>
-                            </li>
-                            <li><a href="NoPage">Customer Care</a>
-                            </li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="NoPage">New Arrivals</a></li>
+                            <li className="show-mobile parent"><a href="NoPage" data-related="title_1">Categories</a></li>
+                            <li><a href="NoPage">Discounts</a></li>
+                            <li><a href="NoPage">Bogo</a></li>
+                            <li><a href="NoPage">Check My Voucher Status</a></li>
+                            <li><a href="NoPage">Resend My Voucher</a></li>
+                            <li><a href="NoPage">My Transactions</a></li>
+                            <li><a href="NoPage">Customer Care</a></li>
                         </ul>
                         <div className="subMenu" id="categories">
-                            <div className="text-right nav-back"><span>Categories</span>
-                            </div>
+                            <div className="text-right nav-back"><span>Categories</span></div>
                             <ul className="list-unstyled m-0">
-                                <li><a href="category.html">Apparel &amp; Accessories</a>
-                                </li>
-                                <li><a href="category.html">Food &amp; Beverage</a>
-                                </li>
-                                <li><a href="category.html">Grocery &amp; Home Needs</a>
-                                </li>
-                                <li><a href="category.html">Mobile &amp; Electronics</a>
-                                </li>
-                                <li><a href="category.html">Health &amp; Wellness</a>
-                                </li>
-                                <li><a href="category.html">e-Com &amp; Online</a>
-                                </li>
-                                <li><a href="category.html">Entertainment &amp; Magazines</a>
-                                </li>
-                                <li><a href="category.html">Cabs &amp; Travel</a>
-                                </li>
-                                <li><a href="category.html">All Brands</a>
-                                </li>
+                                <li><a href="category.html">Apparel &amp; Accessories</a></li>
+                                <li><a href="category.html">Food &amp; Beverage</a></li>
+                                <li><a href="category.html">Grocery &amp; Home Needs</a></li>
+                                <li><a href="category.html">Mobile &amp; Electronics</a></li>
+                                <li><a href="category.html">Health &amp; Wellness</a></li>
+                                <li><a href="category.html">e-Com &amp; Online</a></li>
+                                <li><a href="category.html">Entertainment &amp; Magazines</a></li>
+                                <li><a href="category.html">Cabs &amp; Travel</a></li>
+                                <li><a href="category.html">All Brands</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div className="off-canvas-main">
                 <div className="container-fluid">
                     <Header />

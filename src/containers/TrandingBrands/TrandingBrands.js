@@ -1,6 +1,8 @@
 import React from 'react'
 
 export default function TrandingBrands() {
+    const brandList = [{ brand: 1 }, { brand: 2 }, { brand: 3 }, { brand: 4 }, { brand: 5 }, { brand: 6 }]
+
     return (
         <div className="container">
             <div className="row">
@@ -9,62 +11,14 @@ export default function TrandingBrands() {
                 </div>
                 <div className="col-12">
                     <div className="TrendingBrands-owl-carousel owl-carousel">
-                        <div className="item">
+                        {brandList.map(e => (<div className="item" key={e.brand.toString()}>
                             <div className="productList border rounded p-0">
-                                <img src="images/tranding-brand/1.jpg" alt="product image" className="w-100 rounded" />
+                                <img src={`images/tranding-brand/${e.brand}.jpg`} alt="product" className="w-100 rounded" />
                                 <div className="pr-det text-center">
-                                    <div className="logoBox"><img src="images/tranding-brand/1.png" /></div>
+                                    <div className="logoBox"><img src={`images/tranding-brand/${e.brand}.png`} alt='logo' /></div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="item">
-                            <div className="productList border rounded p-0">
-                                <img src="images/tranding-brand/2.jpg" alt="product image" className="w-100 rounded" />
-                                <div className="pr-det text-center">
-                                    <div className="logoBox"><img src="images/tranding-brand/2.png" /></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="productList border rounded p-0">
-                                <img src="images/tranding-brand/3.jpg" alt="product image" className="w-100 rounded" />
-                                <div className="pr-det text-center">
-                                    <div className="logoBox"><img src="images/tranding-brand/3.png" /></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="productList border rounded p-0">
-                                <img src="images/tranding-brand/4.jpg" alt="product image" className="w-100 rounded" />
-                                <div className="pr-det text-center">
-                                    <div className="logoBox"><img src="images/tranding-brand/5.png" /></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="productList border rounded p-0">
-                                <img src="images/tranding-brand/5.jpg" alt="product image" className="w-100 rounded" />
-                                <div className="pr-det text-center">
-                                    <div className="logoBox"><img src="images/tranding-brand/4.png" /></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="productList border rounded p-0">
-                                <img src="images/tranding-brand/6.jpg" alt="product image" className="w-100 rounded" />
-                                <div className="pr-det text-center">
-                                    <div className="logoBox"><img src="images/tranding-brand/6.png" /></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="productList border rounded p-0">
-                                <img src="images/tranding-brand/7.jpg" alt="product image" className="w-100 rounded" />
-                                <div className="pr-det text-center">
-                                    <div className="logoBox"><img src="images/tranding-brand/1.png" /></div>
-                                </div>
-                            </div>
-                        </div>
+                        </div>))}
                     </div>
                 </div>
             </div>
